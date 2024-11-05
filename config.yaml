@@ -36,7 +36,7 @@ sources:
     exclude: []  # 要排除的特定数据项
 
   builtwith:
-    url: "https://builtwith.com/dl/builtwith-top1m.zip"
+    url: "https://proxy.oneteam.workers.dev/https://builtwith.com/dl/builtwith-top1m.zip"
     has_header: false
     original_fields: ["Rank", "Domain"]
     used_fields: ["Rank", "Domain"]
@@ -72,7 +72,7 @@ sources:
     exclude: []  # 要排除的特定数据项
 
   tranco:
-    url: "https://tranco-list.eu/top-1m.csv.zip"
+    url: "https://proxy.oneteam.workers.dev/https://tranco-list.eu/top-1m.csv.zip"
     has_header: false
     original_fields: ["Rank", "Domain"]
     used_fields: ["Rank", "Domain"]
@@ -96,7 +96,7 @@ sources:
     exclude: []  # 要排除的特定数据项
 
   crawlson:
-    url: "https://www.crawlson.com/crawlson.com-top-1m.txt.zip?1722038594"
+    url: "https://proxy.oneteam.workers.dev/https://www.crawlson.com/crawlson.com-top-1m.txt.zip"
     has_header: false
     original_fields: ["Rank", "Domain"]
     used_fields: ["Rank", "Domain"]
