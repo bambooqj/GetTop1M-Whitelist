@@ -1,0 +1,33 @@
+name: Daily Script Run and Save Artifact
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 00:00 UTC 执行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python (如果是 Python 脚本)
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run script
+      run: |
+        python check_top1m.py  # 运行您的脚本，生成文件在当前工作目录下
+
+    - name: Upload data as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: daily-data  # 工件的名称
+        path: ./  # 使用当前工作目录（.）来上传所有生成的文件
