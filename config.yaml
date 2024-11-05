@@ -1,0 +1,108 @@
+sources:
+  alexa:
+    url: "https://s3.amazonaws.com/alexa-static/top-1m.csv.zip"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 5
+    security_score: 5
+    filename: "Alexa-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  umbrella:
+    url: "https://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 11
+    security_score: 11
+    filename: "umbrella-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  majestic:
+    url: "https://downloads.majestic.com/majestic_million.csv"
+    has_header: true
+    original_fields: ["GlobalRank", "TldRank", "Domain", "TLD", "RefSubNets", "RefIPs", "IDN_Domain", "IDN_TLD", "PrevGlobalRank", "PrevTldRank", "PrevRefSubNets", "PrevRefIPs"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "GlobalRank"
+    trust_score: 9
+    security_score: 9
+    filename: "majestic-top-1m.csv" 
+    exclude: []  # 要排除的特定数据项
+
+  builtwith:
+    url: "https://builtwith.com/dl/builtwith-top1m.zip"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 7
+    security_score: 7
+    filename: "builtwith-top-1m.csv"
+    exclude: ["removed"]  # 要排除的特定数据项 ["removed", "example.com"] 
+
+  statvoo:
+    url: "https://statvoo.com/dl/top-1million-sites.csv.zip"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 5
+    security_score: 5
+    filename: "Statvoo-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  domcop:
+    url: "https://www.domcop.com/files/top/top10milliondomains.csv.zip"
+    has_header: true
+    original_fields: ["Rank", "Domain", "Open Page Rank"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 5
+    security_score: 5
+    filename: "domcop-top-10m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  tranco:
+    url: "https://tranco-list.eu/top-1m.csv.zip"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 6
+    security_score: 6
+    filename: "Tranco-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  cloudflare:
+    url: "https://radar.cloudflare.com/charts/LargerTopDomainsTable/attachment?id=1521&top=1000000&startDate=2024-10-28&endDate=2024-11-04"
+    has_header: true
+    original_fields: ["domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "domain"
+    rank_field: null
+    trust_score: 7
+    security_score: 7
+    filename: "Cloudflare-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
+  crawlson:
+    url: "https://www.crawlson.com/crawlson.com-top-1m.txt.zip?1722038594"
+    has_header: false
+    original_fields: ["Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "Rank"
+    trust_score: 6
+    security_score: 6
+    filename: "crawlson-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
