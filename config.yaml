@@ -36,7 +36,7 @@ sources:
     exclude: []  # 要排除的特定数据项
 
   builtwith:
-    url: "https://proxy.oneteam.workers.dev/https://builtwith.com/dl/builtwith-top1m.zip"
+    url: "https://builtwith.com/dl/builtwith-top1m.zip"
     has_header: false
     original_fields: ["Rank", "Domain"]
     used_fields: ["Rank", "Domain"]
