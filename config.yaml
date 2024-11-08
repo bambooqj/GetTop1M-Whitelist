@@ -107,7 +107,7 @@ sources:
     filename: "crawlson-top-1m.csv"
     exclude: []  # 要排除的特定数据项
 
-   secrankfqdn:
+  secrankfqdn:
     url: "https://secrank-topdomains.oss-cn-beijing.aliyuncs.com/dailyrank-fqdn/2024-09-26.gz?Expires=1731079825&OSSAccessKeyId=STS.NTyHN3vdr4ekTNEVL8B4UP3sT&Signature=xw%2Bw%2F3v%2B0OFVvKQXmlhuX2dalX0%3D&security-token=CAISywJ1q6Ft5B2yfSjIr5fMA%2FSHm7tTg6eAVmj0skxtTrt5v%2FbYtjz2IHhMf3RpB%2BsYtfs%2FnWBQ7%2F4TlrtoRpRfTErHKNd39phQ9AqgZZGZN31GZmRe2vOfAmG2J0PR%2Fq27OpfULr70fvOqdCq39Etayqf7cjOPRkGsNYbz57dsctUQWHvTD1MEfqA0QDFvs8gHL3DcGO%2BwOxrx%2BArqAVFvpxB3hBEUi8394LXFukKO1QGhmrVM9tugecj%2FVaQ2YscjCeXS9fdta6%2FM3BRX7xV376pshMRGg2yf5orAWgcKvU7ZY7OEqoQ3fRUcb6w7CrNCq%2BPnj%2Fp8t%2FxMAjROV%2FG%2BVgs8cVM8JOjIqKOscIsiJkw24h2eFV55c8Fdm%2BgUooJVgIMhTnduUfAPRPEOR5KCZN90pEHpdj6EjEnBL4rB5MUctfzRp6kxOmbUTzDnGoABH3b3tt6AndU8bk%2BAsh5zesMGRKwlpWy3tgDo%2FC20MgtIPcbFrVtd%2BcU1qnvHVEor94LqO2luECxZmKfgGb4x%2FcKeeBUGtiMHpMU2MF0%2Bfym3YrGorLywfRGkU4NOfHEkEExXki874Z5mdn3lqzl88NRqnao4vGe%2FS9Vs2a1NEd8gAA%3D%3D"
     has_header: false
     original_fields: ["Domain","Flowrate","Rank"]
@@ -119,7 +119,7 @@ sources:
     filename: "secrank_fqdn-top-1m.csv"
     exclude: []  # 要排除的特定数据项   
 
-   secranksld:
+  secranksld:
     url: "https://secrank-topdomains.oss-cn-beijing.aliyuncs.com/dailyrank-sld/2024-09-26.gz?Expires=1731079831&OSSAccessKeyId=STS.NTyHN3vdr4ekTNEVL8B4UP3sT&Signature=aQJk%2FneFKmcJrScPMqTSexaMAOk%3D&security-token=CAISywJ1q6Ft5B2yfSjIr5fMA%2FSHm7tTg6eAVmj0skxtTrt5v%2FbYtjz2IHhMf3RpB%2BsYtfs%2FnWBQ7%2F4TlrtoRpRfTErHKNd39phQ9AqgZZGZN31GZmRe2vOfAmG2J0PR%2Fq27OpfULr70fvOqdCq39Etayqf7cjOPRkGsNYbz57dsctUQWHvTD1MEfqA0QDFvs8gHL3DcGO%2BwOxrx%2BArqAVFvpxB3hBEUi8394LXFukKO1QGhmrVM9tugecj%2FVaQ2YscjCeXS9fdta6%2FM3BRX7xV376pshMRGg2yf5orAWgcKvU7ZY7OEqoQ3fRUcb6w7CrNCq%2BPnj%2Fp8t%2FxMAjROV%2FG%2BVgs8cVM8JOjIqKOscIsiJkw24h2eFV55c8Fdm%2BgUooJVgIMhTnduUfAPRPEOR5KCZN90pEHpdj6EjEnBL4rB5MUctfzRp6kxOmbUTzDnGoABH3b3tt6AndU8bk%2BAsh5zesMGRKwlpWy3tgDo%2FC20MgtIPcbFrVtd%2BcU1qnvHVEor94LqO2luECxZmKfgGb4x%2FcKeeBUGtiMHpMU2MF0%2Bfym3YrGorLywfRGkU4NOfHEkEExXki874Z5mdn3lqzl88NRqnao4vGe%2FS9Vs2a1NEd8gAA%3D%3D"
     has_header: false
     original_fields: ["Domain","Flowrate","Rank"]
