@@ -2,7 +2,7 @@ name: Daily Script Run and Save Artifact
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 00:00 UTC 执行
+    - cron: '0 0 1 * *'  # 每天 00:00 UTC 执行
   workflow_dispatch:  # 允许手动触发
 
 jobs:
