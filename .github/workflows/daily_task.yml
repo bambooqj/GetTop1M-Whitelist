@@ -27,7 +27,7 @@ jobs:
         python check_top1m.py  # 运行您的脚本，生成文件在当前工作目录下
 
     - name: Upload data as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.6.2
       with:
         name: daily-data  # 工件的名称
         path: ./  # 使用当前工作目录（.）来上传所有生成的文件
