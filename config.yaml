@@ -83,6 +83,18 @@ sources:
     filename: "Tranco-top-1m.csv"
     exclude: []  # 要排除的特定数据项
 
+  netapi:
+    url: "https://netapi.com/netapi_top1mln.csv"
+    has_header: true
+    original_fields: ["NetAPI_Rank", "Domain"]
+    used_fields: ["Rank", "Domain"]
+    domain_field: "Domain"
+    rank_field: "NetAPI_Rank"
+    trust_score: 6
+    security_score: 6
+    filename: "netapi-top-1m.csv"
+    exclude: []  # 要排除的特定数据项
+
   cloudflare:
     url: "https://radar.cloudflare.com/charts/LargerTopDomainsTable/attachment?id=1521&top=1000000&startDate=2024-10-28&endDate=2024-11-04"
     has_header: true
